@@ -104,10 +104,6 @@ Thumbs.db
 /devops/transfer.sh.local
 
 **/.DS_Store
-/.env
-/.env.dev
-/.env.local.php
-/.env.*.local
 
 **/var/**
 **/logs/*
@@ -118,3 +114,15 @@ mysql/**
 /pgadmin/*
 !/pgadmin/.gitkeep
 /postgres/data/
+
+/.env
+/.env.local
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###

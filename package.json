@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "valeriechapple.com",
+  "main": "index.js",
+  "repository": "git@github.com:vchapple17/portfolio.git",
+  "author": "Valerie Chapple <chapplev@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "in-container": "docker exec -u web -w /project_files/portfolio profile yarn",
+    "composer": "docker exec -u web -w /project_files/portfolio profile composer "
+  }
+}
