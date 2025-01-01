@@ -1,23 +1,33 @@
 <?php
 
-namespace App\Security;
+namespace App\Entity;
 
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Doctrine\DBAL\Types\Types;
 
-class User implements UserInterface, PasswordAuthenticatedUserInterface
+#[ORM\MappedSuperclass]
+abstract class BaseUser implements UserInterface, PasswordAuthenticatedUserInterface
 {
-    private $email;
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column]
+    protected ?int $id = null;
+
+    #[ORM\Column(length: 255)]
+    protected ?string $email = null;
 
     /**
      * @var list<string> The user roles
      */
-    private $roles = [];
+    #[ORM\Column(type: Types::JSON)]
+    protected array $roles = [];
 
     /**
      * @var string The hashed password
      */
-    private $password;
+    #[ORM\Column(length: 255)]
+    protected ?string $password = null;
 
     public function getEmail(): ?string
     {

@@ -22,6 +22,7 @@ class UserProvider implements UserProviderInterface, PasswordUpgraderInterface
      */
     public function loadUserByIdentifier($identifier): UserInterface
     {
+        $this->getEntityManager->find(User::class, $identifier);
         // Load a User object from your data source or throw UserNotFoundException.
         // The $identifier argument may not actually be a username:
         // it is whatever value is being returned by the getUserIdentifier()
@@ -72,8 +73,7 @@ class UserProvider implements UserProviderInterface, PasswordUpgraderInterface
      */
     public function upgradePassword(PasswordAuthenticatedUserInterface $user, string $newHashedPassword): void
     {
-        // TODO: when hashed passwords are in use, this method should:
-        // 1. persist the new password in the user storage
-        // 2. update the $user object with $user->setPassword($newHashedPassword);
+        $user->setPassword($newHashedPassword);
+        $this->getEntityManager()->flush();
     }
 }
