@@ -126,3 +126,4 @@ mysql/**
 /vendor/
 ###< symfony/framework-bundle ###
 /config/secrets/*/*.decrypt.private.php
+/devops/build.sh.local
