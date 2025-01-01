@@ -12,6 +12,7 @@
 + composer.lock
 + symfony.lock
 + templates**
++ bin**
 + src**
 + public**
 + migrations**
