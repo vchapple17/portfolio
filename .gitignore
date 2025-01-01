@@ -116,7 +116,6 @@ mysql/**
 /postgres/data/
 
 /.env
-/.env.local
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
@@ -126,3 +125,4 @@ mysql/**
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+/config/secrets/*/*.decrypt.private.php

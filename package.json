@@ -8,7 +8,9 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "in-container": "docker exec -u web -w /project_files/portfolio profile yarn",
-    "composer": "docker exec -u web -w /project_files/portfolio profile composer "
+    "in-container": "docker exec -u web -w /project_files/portfolio portfolio yarn",
+    "composer": "docker exec -u web -w /project_files/portfolio portfolio composer ",
+    "console": "docker exec -u web -w /project_files/portfolio portfolio bin/console ",
+    "bash": "docker exec -it -u web -w /project_files/portfolio portfolio /bin/bash"
   }
 }
