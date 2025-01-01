@@ -22,12 +22,16 @@ class UserProvider implements UserProviderInterface, PasswordUpgraderInterface
      */
     public function loadUserByIdentifier($identifier): UserInterface
     {
-        $this->getEntityManager->find(User::class, $identifier);
+        if ($user = $this->getEntityManager->find(AppUser::class, $identifier)) {
+            return $user;
+        }
+        throw new UserNotFoundException();
+
         // Load a User object from your data source or throw UserNotFoundException.
         // The $identifier argument may not actually be a username:
         // it is whatever value is being returned by the getUserIdentifier()
         // method in your User class.
-        throw new \Exception('TODO: fill in loadUserByIdentifier() inside '.__FILE__);
+//         throw new \Exception('TODO: fill in loadUserByIdentifier() inside '.__FILE__);
     }
 
     /**
