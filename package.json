@@ -11,6 +11,36 @@
     "in-container": "docker exec -u web -w /project_files/portfolio portfolio yarn",
     "composer": "docker exec -u web -w /project_files/portfolio portfolio composer ",
     "console": "docker exec -u web -w /project_files/portfolio portfolio bin/console ",
-    "bash": "docker exec -it -u web -w /project_files/portfolio portfolio /bin/bash"
+    "bash": "docker exec -it -u web -w /project_files/portfolio portfolio /bin/bash",
+    "start": "docker exec -it -u web -w /project_files/portfolio portfolio yarn encore dev-server",
+    "build": "encore production --progress"
+  },
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@symfony/webpack-encore": "^5.0.1",
+    "@vachip/vue-elements": "^0.0.2",
+    "axios": "^1.7.9",
+    "date-fns": "^4.1.0",
+    "file-loader": "^6.2.0",
+    "lodash": "^4.17.21",
+    "pinia": "^2.3.0",
+    "sass": "^1.83.1",
+    "sass-loader": "^16.0.4",
+    "tailwindcss": "^3.4.17",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "vue": "^3.5.13",
+    "vue-loader": "^17.4.2",
+    "vue-router": "^4.5.0",
+    "webpack-notifier": "^1.15.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5",
+    "webpack-dev-server": "^5.2.0"
   }
 }

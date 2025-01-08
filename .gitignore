@@ -127,3 +127,10 @@ mysql/**
 ###< symfony/framework-bundle ###
 /config/secrets/*/*.decrypt.private.php
 /devops/build.sh.local
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
