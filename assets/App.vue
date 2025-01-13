@@ -17,8 +17,6 @@ const hide = ref(false)
 
 <template>
   <div>
-    HELLO
-    {{hide}}
 <!--    <template v-if="$route.name === 'home'">-->
 <!--      <transition name="fade">-->
 <!--        <SplashScreen v-show="!hide" @click="hide = true"></SplashScreen>-->

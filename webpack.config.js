@@ -23,6 +23,7 @@ Encore
 
     .addEntry('app', './assets/app.ts')
 
+    // .addCacheGroup('vendor')
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
 
@@ -68,7 +69,12 @@ Encore
     .enableSassLoader()
 
     // uncomment if you use TypeScript
-    .enableTypeScriptLoader()
+    .enableTypeScriptLoader(function (typeScriptConfigOptions) {
+    typeScriptConfigOptions.silent = true;
+    typeScriptConfigOptions.appendTsSuffixTo = true;
+    // typeScriptConfigOptions.transpileOnly = true;
+    if (Encore.isProduction()) typeScriptConfigOptions.compilerOptions.noImplicitAny = false
+})
 
     // Copy images/files for non-JS file access
     .copyFiles({
