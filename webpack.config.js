@@ -21,7 +21,7 @@ Encore
         })
 
 
-    .addEntry('app', './assets/app.js')
+    .addEntry('app', './assets/app.ts')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
@@ -53,7 +53,6 @@ Encore
         'window.jQuery': 'jquery',
         '_': 'lodash',
         'axios': 'axios',
-
     })
     .configureBabel((config) => {
           config.plugins.push('@babel/plugin-transform-class-properties');
@@ -74,6 +73,7 @@ Encore
     // Copy images/files for non-JS file access
     .copyFiles({
         from: './assets/static',
+        pattern: /\.(png|jpg|jpeg)$/,
         // to: Encore.isProduction() ? 'static/[path][name].[hash:8].[ext]' : 'static/[path][name].[ext]'
         to: 'static/[path][name].[ext]'
     })
@@ -86,7 +86,8 @@ if (!Encore.isProduction()) {
     .setManifestKeyPrefix('/build/')
     .configureDefinePlugin(() => {return {
       '__VUE_OPTIONS_API__': true,
-      '__VUE_PROD_DEVTOOLS__': true
+      '__VUE_PROD_DEVTOOLS__': true,
+      '__VUE_PROD_HYDRATION_MISMATCH_DETAILS__': false
     }})
   ;
 }

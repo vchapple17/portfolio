@@ -13,17 +13,21 @@
     "console": "docker exec -u web -w /project_files/portfolio portfolio bin/console ",
     "bash": "docker exec -it -u web -w /project_files/portfolio portfolio /bin/bash",
     "start": "docker exec -it -u web -w /project_files/portfolio portfolio yarn encore dev-server",
-    "build": "encore production --progress"
+    "build": "docker exec -it -u web -w /project_files/portfolio portfolio encore production --progress",
+    "kill": "docker exec -it portfolio /bin/bash -c 'kill -9 $(pgrep -f webpack)' ; exit 0"
   },
   "dependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/fontawesome-svg-core": "*",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@fortawesome/vue-fontawesome": "*",
     "@symfony/webpack-encore": "^5.0.1",
+    "@tsconfig/node22": "^22.0.0",
     "@vachip/vue-elements": "^0.0.2",
+    "@vue/tsconfig": "^0.7.0",
     "axios": "^1.7.9",
+    "core-js": "^3.40.0",
     "date-fns": "^4.1.0",
     "file-loader": "^6.2.0",
     "lodash": "^4.17.21",
@@ -39,6 +43,7 @@
     "webpack-notifier": "^1.15.0"
   },
   "devDependencies": {
+    "regenerator-runtime": "^0.14.1",
     "webpack": "^5.97.1",
     "webpack-cli": "^5",
     "webpack-dev-server": "^5.2.0"

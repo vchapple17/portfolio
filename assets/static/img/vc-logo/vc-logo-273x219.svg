@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="273.51886mm"
+   height="219.61243mm"
+   viewBox="0 0 273.51886 219.61243"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2-dev (9ee32be, 2021-06-19)"
+   sodipodi:docname="vc_logo.svg"
+   inkscape:export-filename="/Users/valeriechapple/Documents/bitbucket/profile-symfony/assets/static/img/bitmap.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="400mm"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-top="10"
+     fit-margin-bottom="10"
+     inkscape:zoom="0.43033194"
+     inkscape:cx="249.80716"
+     inkscape:cy="528.66167"
+     inkscape:window-width="1680"
+     inkscape:window-height="997"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="309.12668"
+       y="331.94812"
+       width="1037.3378"
+       height="535.2663"
+       id="rect2123" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(9.9999965,9.9999971)">
+    <text
+       xml:space="preserve"
+       transform="matrix(1.6916351,0,0,1.6916351,-516.84013,-574.5313)"
+       id="text2121"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.333px;line-height:1.25;font-family:'Dimitri Swank';-inkscape-font-specification:'Dimitri Swank, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect2123);fill:#01a2a9;fill-opacity:1;stroke:none"><tspan
+         x="309.12695"
+         y="438.96383"
+         id="tspan7768">VC</tspan></text>
+  </g>
+</svg>
