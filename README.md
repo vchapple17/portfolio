@@ -50,7 +50,7 @@ This website launched on a Symfony platform within Docker containers. While this
 
 &#x2713; Simple landing page - 01/12/25
 
-&#x2610; Setup Vue 3 and Typescript - In progress
+&#x2713; Setup Vue 3 and Typescript - 01/13/25
 
 &#x2610; Wireframe and setup style guidelines
 
