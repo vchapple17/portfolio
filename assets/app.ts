@@ -19,7 +19,6 @@ import App from './App.vue'
 //     }
 // }
 
-const app =
 createApp(App)
   // .use(router)
   // .component('fa-icon', FontAwesomeIcon)
