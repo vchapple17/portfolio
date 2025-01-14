@@ -4,6 +4,7 @@
 + symfony.lock
 + package.json
 + yarn.lock
++ tsconfig.json
 + webpack.config.js
 + templates**
 + bin**
