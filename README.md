@@ -26,10 +26,10 @@ This website launched on a Symfony platform within Docker containers. While this
 
 ### Devops Progress
 
-&#x2713; Setup VPS with configurations, firewall, and permissions - 12/27/25
+&#x2713; Setup VPS with configurations, firewall, and permissions - 12/27/24
 
 
-&#x2713; Install docker compose and php modules - 12/29/25
+&#x2713; Install docker compose and php modules - 12/29/24
 
 
 &#x2713; Create local and server code repository to handle docker containers easily - 01/01/25
@@ -44,7 +44,7 @@ This website launched on a Symfony platform within Docker containers. While this
 
 ### Portfolio Progress
 
-&#x2713; Init - 12/21/25
+&#x2713; Init - 12/21/24
 
 &#x2713; Base Symfony and webpack setup - 01/01/25
 
