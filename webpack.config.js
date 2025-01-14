@@ -73,7 +73,7 @@ Encore
     typeScriptConfigOptions.silent = true;
     typeScriptConfigOptions.appendTsSuffixTo = true;
     // typeScriptConfigOptions.transpileOnly = true;
-    if (Encore.isProduction()) typeScriptConfigOptions.compilerOptions.noImplicitAny = false
+    // if (Encore.isProduction()) typeScriptConfigOptions.compilerOptions.noImplicitAny = false
 })
 
     // Copy images/files for non-JS file access
