@@ -109,7 +109,6 @@ if (!Encore.isProduction()) {
 let config = Encore.getWebpackConfig();
 
 config.resolve.alias = {
-  'vue': 'vue/dist/vue.esm-bundler.js',
   '@assets': path.resolve(__dirname, '/assets/'),
 }
 

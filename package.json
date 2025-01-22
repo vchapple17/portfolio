@@ -13,7 +13,7 @@
     "console": "docker exec -u web -w /project_files/portfolio portfolio bin/console ",
     "bash": "docker exec -it -u web -w /project_files/portfolio portfolio /bin/bash",
     "start": "docker exec -it -u web -w /project_files/portfolio portfolio yarn encore dev-server",
-    "build": "docker exec -it -u web -w /project_files/portfolio portfolio yarn encore production --progress",
+    "build": "docker exec -it -u web -w /project_files/portfolio portfolio yarn encore production",
     "kill": "docker exec -it portfolio /bin/bash -c 'kill -9 $(pgrep -f webpack)' ; exit 0"
   },
   "dependencies": {
