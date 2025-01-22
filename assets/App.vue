@@ -30,6 +30,7 @@ const hide = ref(false)
       <div>&#x2610; Demo website for Symfony and Vue project <a href="https://github.com/vchapple17/portfolio">Portfolio</a></div>
       <div>&#x2610; Share information about myself and demonstrate my skills</div>
       <div>&#x2610; Demo and link personal projects</div>
+      <div>&#x2610; General playground for learning new languages</div>
 
       <br>
       <br>
@@ -51,6 +52,7 @@ const hide = ref(false)
       <div>&#x2713; Base Symfony and webpack setup - 01/01/25</div>
       <div>&#x2713; Simple landing page - 01/12/25</div>
       <div>&#x2713; Setup Vue 3 and Typescript - 01/13/25</div>
+      <div>&#x2713; Setup Vue 3 and router - 01/21/25</div>
       <div>&#x2610; Wireframe and setup style guidelines</div>
       <div>&#x2610; Create basic vue components (e.g. navigation, inputs) or review using PrimeVue</div>
       <div>&#x2610; Setup postgres and security auth with Symfony and potentially SSO, such as Google and/or Apple</div>

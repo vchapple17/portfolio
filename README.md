@@ -22,6 +22,8 @@ This website launched on a Symfony platform within Docker containers. While this
 
 &#x2610; Demo and link personal projects
 
+&#x2610; General playground for learning new languages
+
 
 
 ### Devops Progress
@@ -51,6 +53,8 @@ This website launched on a Symfony platform within Docker containers. While this
 &#x2713; Simple landing page - 01/12/25
 
 &#x2713; Setup Vue 3 and Typescript - 01/13/25
+
+&#x2713; Setup Vue 3 and router - 01/21/25
 
 &#x2610; Wireframe and setup style guidelines
 
