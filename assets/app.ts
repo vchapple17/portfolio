@@ -9,7 +9,7 @@ import App from './App.vue'
 // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 //
 //
-// import router from './router'
+import router from './router'
 // import {ClientHttp} from './utils/client.ts';
 // Vue.prototypes.http = new ClientHttp()
 //
@@ -20,6 +20,6 @@ import App from './App.vue'
 // }
 
 createApp(App)
-  // .use(router)
+  .use(router)
   // .component('fa-icon', FontAwesomeIcon)
   .mount('#app')
