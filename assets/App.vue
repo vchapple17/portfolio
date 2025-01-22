@@ -17,10 +17,10 @@ const hide = ref(false)
 
 <template>
   <div>
-<!--    <template v-if="$route.name === 'home'">-->
-<!--      <transition name="fade">-->
-<!--        <SplashScreen v-show="!hide" @click="hide = true"></SplashScreen>-->
-<!--      </transition>-->
+    <template v-if="$route.name === 'home'">
+      <transition name="fade">
+        <SplashScreen v-show="!hide" @click="hide = true"></SplashScreen>
+      </transition>
 
 <!--      <transition name="fade">-->
 <!--        <NavBar v-show="hide"/>-->
@@ -46,6 +46,6 @@ const hide = ref(false)
 <!--      </div>-->
 
 <!--      <FootBar/>-->
-<!--    </template>-->
+    </template>
   </div>
 </template>

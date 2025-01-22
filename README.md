@@ -69,6 +69,8 @@ This website launched on a Symfony platform within Docker containers. While this
 
 ### Additional Project Ideas
 
+&#x2610; Remake my Physics Conservation of Momentum Demo
+
 &#x2610; Powerlifting Meet Manager
 
 &#x2610; Food and Beverage Rater
