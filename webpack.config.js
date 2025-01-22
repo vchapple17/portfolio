@@ -11,7 +11,7 @@ Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/build/')
     // public path used by the web server to access the output path
-    .setPublicPath((Encore.isProduction() ? '' : 'http://valeriechapple.test:8880') + '/build')
+    .setPublicPath((Encore.isProduction() ? '' : 'https://valeriechapple.test:8880') + '/build')
     // only needed for CDN's or subdirectory deploy
     //.setManifestKeyPrefix('build/')
     .configureDevServerOptions(options => {
@@ -88,7 +88,7 @@ Encore
 // .. rest of configuration
 if (!Encore.isProduction()) {
   Encore
-    // .setPublicPath('http://valeriechapple.test:8080/build/')
+    // .setPublicPath('https://valeriechapple.test:8080/build/')
     .setManifestKeyPrefix('/build/')
     .configureDefinePlugin(() => {return {
       '__VUE_OPTIONS_API__': true,
