@@ -41,7 +41,7 @@ const hide = ref(false)
       <div>&#x2713; Install docker compose and php modules - 12/29/24</div>
       <div>&#x2713; Create local and server code repository to handle docker containers easily - 01/01/25</div>
       <div>&#x2713; Setup nginx and routing- 01/08/25</div>
-      <div>&#x2610; Implement Jenkins container and build processes</div>
+      <div>&#x2610; Implement build processes</div>
 
       <br>
       <br>

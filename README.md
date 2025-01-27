@@ -40,7 +40,7 @@ This website launched on a Symfony platform within Docker containers. While this
 &#x2713; Setup nginx and routing- 01/08/25
 
 
-&#x2610; Implement Jenkins container and build processes
+&#x2610; Implement build processes
 
 
 
