@@ -39,8 +39,12 @@ This website launched on a Symfony platform within Docker containers. While this
 
 &#x2713; Setup nginx and routing- 01/08/25
 
+&#x2713; Setup SSL local and on server - 01/28/25
+
 
 &#x2610; Implement build processes
+
+&#x2610; Review Github Actions (or other options) and implement build processes
 
 
 
