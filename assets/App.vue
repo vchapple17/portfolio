@@ -23,7 +23,12 @@ const hide = ref(false)
       <p>Valerie Chapple</p>
       <p>Full Stack Software Developer</p>
 
-      <div style="margin-bottom: 10px">
+      <p>Quick Links</p>
+      <div><a href="/projects/vue-api-demo">Vue Api Demo</a></div>
+
+      <hr>
+
+      <div style="margin-bottom: 10px; margin-top: 20px;">
         This website launched on a Symfony platform within Docker containers. While this site is in its early stages, I have many goals for this site.
       </div>
       <div>&#x2713; Demo website for backend configuration in <a href="https://github.com/vchapple17/dockerlocal">Docker Local</a> - 01/03/25</div>
