@@ -11,12 +11,14 @@ Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/build/')
     // public path used by the web server to access the output path
-    .setPublicPath((Encore.isProduction() ? '' : 'https://valeriechapple.test:8880') + '/build')
+    .setPublicPath((Encore.isProduction() ? '' : 'https://portfolio.test:8880') + '/build')
     // only needed for CDN's or subdirectory deploy
     //.setManifestKeyPrefix('build/')
     .configureDevServerOptions(options => {
           options.allowedHosts = 'all'
           options.host         = '0.0.0.0';
+          options.server = 'https'
+          options.hot = true
           options.port = 8880
         })
 
